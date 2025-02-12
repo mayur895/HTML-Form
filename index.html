@@ -1,123 +1,117 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mayurs Form</title>
+    <title>Mayur's Form</title>
   </head>
   <body>
     <h2>Registration Form</h2>
     <form action="#" method="post" autocomplete="on" novalidate>
-      <table border="1" style="border-collapse: collapse" align="center">
-        <tr>
-          <th><label for="text">Name</label></th>
-          <td>
-            <input
-              type="text"
-              id="text"
-              name="text"
-              placeholder="Enter text"
-              required
-              minlength="3"
-              maxlength="20"
-            />
-          </td>
-        </tr>
-        <tr>
-          <th><label for="password">Password:</label></th>
-          <td>
-            <input type="password" id="password" name="password" required />
-          </td>
-        </tr>
-        <tr>
-          <th><label for="email">Email:</label></th>
-          <td><input type="email" id="email" name="email" required /></td>
-        </tr>
-        <tr>
-          <th><label for="number">Number:</label></th>
-          <td>
-            <input type="number" id="number" name="number" min="1" max="100" />
-          </td>
-        </tr>
-        <tr>
-          <th><label for="date">Date:</label></th>
-          <td><input type="date" id="date" name="date" /></td>
-        </tr>
-        <tr>
-          <th><label for="datetime">Datetime:</label></th>
-          <td><input type="datetime-local" id="datetime" name="datetime" /></td>
-        </tr>
-        <tr>
-          <th><label for="color">Color:</label></th>
-          <td><input type="color" id="color" name="color" /></td>
-        </tr>
-        <tr>
-          <th><label for="range">Range:</label></th>
-          <td>
-            <input
-              type="range"
-              id="range"
-              name="range"
-              min="0"
-              max="100"
-              step="5"
-            />
-          </td>
-        </tr>
-        <tr>
-          <th><label for="file">File:</label></th>
-          <td><input type="file" id="file" name="file" /></td>
-        </tr>
-        <tr>
-          <th><label>Gender:</label></th>
-          <td>
-            <input type="radio" id="male" name="gender" value="male" /><label
-              for="male"
-            >
-              Male</label
-            >
-            <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="female"
-            /><label for="female"> Female</label>
-          </td>
-        </tr>
-        <tr>
-          <th><label for="checkbox">Agree:</label></th>
-          <td><input type="checkbox" id="checkbox" name="agree" required /></td>
-        </tr>
-        <tr>
-          <th><label for="select">Country:</label></th>
-          <td>
-            <select id="select" name="country">
-              <option value="">Select</option>
-              <option value="usa">USA</option>
-              <option value="uk">UK</option>
-              <option value="india">India</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <th><label for="search">Search:</label></th>
-          <td><input type="search" id="search" name="search" /></td>
-        </tr>
-        <tr>
-          <th><label for="tel">Phone:</label></th>
-          <td>
-            <input type="tel" id="tel" name="phone" placeholder="1234567890" />
-          </td>
-        </tr>
-        <tr>
-          <th><label for="url">Website:</label></th>
-          <td><input type="url" id="url" name="website" /></td>
-        </tr>
-        <tr>
-          <td colspan="2" align="center">
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Reset" />
-          </td>
-        </tr>
-      </table>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table border="1" style="border-collapse: collapse" align="center">
+          <tr>
+            <th><label for="text">Name</label></th>
+            <td>
+              <input
+                type="text"
+                id="text"
+                name="text"
+                placeholder="Enter text"
+                required
+                minlength="3"
+                maxlength="20"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="password">Password:</label></th>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="email">Email:</label></th>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <th><label for="number">Number:</label></th>
+            <td>
+              <input type="number" id="number" name="number" min="1" max="100" />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="date">Date:</label></th>
+            <td><input type="date" id="date" name="date" /></td>
+          </tr>
+          <tr>
+            <th><label for="datetime">Datetime:</label></th>
+            <td><input type="datetime-local" id="datetime" name="datetime" /></td>
+          </tr>
+          <tr>
+            <th><label for="color">Color:</label></th>
+            <td><input type="color" id="color" name="color" /></td>
+          </tr>
+          <tr>
+            <th><label for="range">Range:</label></th>
+            <td>
+              <input
+                type="range"
+                id="range"
+                name="range"
+                min="0"
+                max="100"
+                step="5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="file">File:</label></th>
+            <td><input type="file" id="file" name="file" /></td>
+          </tr>
+          <tr>
+            <th><label>Gender:</label></th>
+            <td>
+              <input type="radio" id="male" name="gender" value="male" /><label for="male"> Male</label>
+              <input type="radio" id="female" name="gender" value="female" /><label for="female"> Female</label>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="checkbox">Agree:</label></th>
+            <td><input type="checkbox" id="checkbox" name="agree" required /></td>
+          </tr>
+          <tr>
+            <th><label for="select">Country:</label></th>
+            <td>
+              <select id="select" name="country">
+                <option value="">Select</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="india">India</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="search">Search:</label></th>
+            <td><input type="search" id="search" name="search" /></td>
+          </tr>
+          <tr>
+            <th><label for="tel">Phone:</label></th>
+            <td>
+              <input type="tel" id="tel" name="phone" placeholder="1234567890" />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="url">Website:</label></th>
+            <td><input type="url" id="url" name="website" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
     </form>
   </body>
 </html>
